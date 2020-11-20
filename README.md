@@ -3,7 +3,6 @@
 ## ISC
 ## Jamgid | jamgid@yahoo.com
 ## ![img](https://avatars0.githubusercontent.com/u/69053531?v=4)
-## <iframe src="https://drive.google.com/file/d/1dEXn5ZoCqri5UrmXGsIqQRB0GL5gV1TY/preview" width="640" height="480"></iframe>
 ## Table of Contents
 1. Description
 2. Installation
