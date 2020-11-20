@@ -1,4 +1,4 @@
-  
+// DEPENDENCIES  
 const inquirer = require("inquirer");
 const fs = require('fs');
 const axios = require("axios");
@@ -57,6 +57,7 @@ inquirer.prompt([
     axios
     .get(`https://api.github.com/users/${data.username}`)
     .then(function(res) {
+        // SETS THE FORMAT FOR THE README.md USING THE INPUT DATA
         const readMe = `
 ## ${data.title}
 ## ${data.license}
@@ -78,7 +79,8 @@ ${data.usage}
 ${data.contributors}
 # Questions
 ${data.questions}`
-      fs.writeFile('README.md', readMe, (err) => {
+    // README.md FILE IS CREATED, TAKING IN ALL THE DATA STORED IN "readMe"  
+    fs.writeFile('README.md', readMe, (err) => {
         if (err) {
             throw err;
         }
